@@ -3,16 +3,15 @@
 #
 # Add it to your .pro file:
 #
-#     PAHO_MQTT_C_SRC_PATH = path/to/paho.mqtt.cpp/src/
+#     PAHO_MQTT_CPP_SRC_PATH = path/to/paho.mqtt.cpp/src/
 #     include(path/to/paho_mqtt_cpp_builtin/paho_mqtt_cpp_builtin.pri)
 #
 # ------------------------------------------------------------------------------
 
-# Make sure that PAHO MQTT C source path variable specified
+# Make sure that PAHO MQTT CPP source path variable specified
 if(isEmpty(PAHO_MQTT_CPP_SRC_PATH)) {
     error("PAHO MQTT CPP source path not defined. For example: path/to/paho.mqtt.cpp/src/")
 }
-
 
 INCLUDEPATH += $${PAHO_MQTT_CPP_SRC_PATH}
 
@@ -43,7 +42,6 @@ HEADERS += \
     $${PAHO_MQTT_CPP_HEADERS_PATH}/topic.h \
     $${PAHO_MQTT_CPP_HEADERS_PATH}/types.h \
     $${PAHO_MQTT_CPP_HEADERS_PATH}/will_options.h
-
 
 SOURCES += \
     $${PAHO_MQTT_CPP_SRC_PATH}/async_client.cpp \
