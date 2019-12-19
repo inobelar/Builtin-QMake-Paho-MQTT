@@ -2,7 +2,7 @@
 
 The set of QMake include files for using [Eclipse Paho C Client Library](https://github.com/eclipse/paho.mqtt.c) and [Eclipse Paho MQTT C++ Client Library](https://github.com/eclipse/paho.mqtt.cpp) as directly **built-in** into executable. 
 
-This is useful in cases where dynamic/static **linking is not possible** for some reasons.
+This is useful in cases when dynamic/static **linking is not possible** for some reasons.
 
 ## Integration
 
