@@ -17,7 +17,7 @@ include(<path/to>/paho_mqtt_c_builtin/paho_mqtt_c_builtin.pri)
 
 ### PAHO MQTT C++ Library
 
-Notice, that C++ library based on C library, and **requires** async support:
+Notice, that C++ library depends on C library, and **requires** async support:
 
 Add into your `*.pro` file next lines:
 
